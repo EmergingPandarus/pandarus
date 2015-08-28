@@ -25,7 +25,8 @@ module Pandarus
     attribute :late, resolve_type(nil)
     attribute :excused, resolve_type(nil)
     attribute :assignment_visible, resolve_type(nil)
-    
+    attribute :submission_history, resolve_type("AssignmentSubmissionHistory", collection: true)
+    attribute :attachments, resolve_type("SubmissionAttachment", collection: true)
   end
 end
 

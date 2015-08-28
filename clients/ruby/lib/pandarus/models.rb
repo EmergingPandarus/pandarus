@@ -97,4 +97,6 @@ require 'pandarus/models/account_notification'
 require 'pandarus/models/file_attachment'
 require 'pandarus/models/answer'
 require 'pandarus/models/account'
+require 'pandarus/models/assignment_submission_history'
+require 'pandarus/models/submission_attachment'
 Virtus.finalize
