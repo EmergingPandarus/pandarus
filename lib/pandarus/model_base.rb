@@ -20,8 +20,6 @@ module Pandarus
         return "String"
       elsif opts[:collection]
         return Array[qualified_type]
-      # elsif opts[:hash]
-      #   return Hash[qualified_type]
       else
         return qualified_type
       end
