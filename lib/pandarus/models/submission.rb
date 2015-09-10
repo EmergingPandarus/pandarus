@@ -5,6 +5,7 @@ module Pandarus
   class Submission < ModelBase
     include Virtus.model(finalize: false)
 
+    attribute :id, resolve_type("Integer")
     attribute :assignment_id, resolve_type("Integer")
     attribute :assignment, resolve_type("String")
     attribute :course, resolve_type("String")
@@ -27,6 +28,7 @@ module Pandarus
     attribute :assignment_visible, resolve_type(nil)
     attribute :submission_history, resolve_type("AssignmentSubmissionHistory", collection: true)
     attribute :attachments, resolve_type("SubmissionAttachment", collection: true)
+    attribute :rubric_assessment, resolve_type("RubricRating", collection: true)
   end
 end
 

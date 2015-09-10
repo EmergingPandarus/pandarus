@@ -42,6 +42,8 @@ module Pandarus
     attribute :previous_grader, resolve_type("String")
     attribute :score, resolve_type("Integer")
     attribute :user_name, resolve_type("String")
+    attribute :id, resolve_type("Integer")
+    attribute :rubric_assessment, resolve_type("Array")
 
   end
 end
