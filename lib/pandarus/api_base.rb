@@ -80,7 +80,7 @@ module Pandarus
 
     def dot_flatten_hash(hash)
       dot_flatten_hash = dot_flatten_recur(hash)
-      if dot_flatten_hash.is_a?(Array) and dot_flatten_hash.length.even?
+      if dot_flatten_hash.length > 1
         Hash[*dot_flatten_hash.flatten(1)]
       else
         Hash[dot_flatten_hash]
